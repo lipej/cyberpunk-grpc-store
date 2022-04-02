@@ -1,7 +1,13 @@
+import { useEffect, useState } from "react";
 import { data } from "~/routes/store";
 import currencyFormatter from "~/utils/currency-formatter";
 
-export default function Product(prod: typeof data[0]) {
+type PorductParams = { prod: typeof data[0], add: () => void }
+
+
+export default function Product({ prod, add }: PorductParams) {
+
+
   return (
     <div className='card w-52 h-[300px] bg-base-300 shadow-xl mx-6 my-4'>
       <figure
@@ -25,7 +31,8 @@ export default function Product(prod: typeof data[0]) {
           R$ {currencyFormatter(prod.price)}
         </div>
         <button
-          onClick={() => console.log(prod)}
+          onClick={add
+          }
           className='badge badge-error ml-2'
         >
           buy
