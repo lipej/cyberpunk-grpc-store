@@ -15,13 +15,12 @@ export class PaymentService {
     this.payment.setCard(this.createCard(params.card))
     this.payment.setOrder(this.createOrder({...params.customer, ...params.order}))
     this.payment.setProvider(params.provider)
+    console.log({params})
   }
 
   async execute() {
-    const client = new PaymentServiceClient(<string>process.env.GRPC_ENTRY)
-    const request = await client.process(this.payment, null)
-
-    return request
+    const client = new PaymentServiceClient('http://localhost:8080')
+    return await client.process(this.payment, null)
   }
 
   private createCard(data: Card.AsObject) {
