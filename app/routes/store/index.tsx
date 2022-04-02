@@ -1,13 +1,16 @@
+import { useEffect, useState } from "react";
+
 import Cart from "~/presentation/components/Cart";
 import Product from "~/presentation/components/Product";
+import Content from "~/presentation/components/Content";
+
 import adrenalineBoosters from "~/presentation/assets/adrenaline-booster.png";
 import bioConductor from "~/presentation/assets/bioconductor.png";
 import bioPlasticBloodVessel from "~/presentation/assets/bioplastic-blood-vessel.png";
 import feedbackCircuit from "~/presentation/assets/feedbackcircuit.png";
 import secondHeart from "~/presentation/assets/second-heart.png";
 import tyrosineInjector from "~/presentation/assets/tyrosine-injector.png";
-import Content from "~/presentation/components/Content";
-import { useEffect, useState } from "react";
+
 import { getInitialValues } from "~/utils/get-initial-values";
 
 import type { Cart as CartType } from "~/domain/types/cart";
