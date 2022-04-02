@@ -1,8 +1,8 @@
 # Welcome to Cyberpunk grpc store!!
 
-This project is made with [Remix](https://remix.run)
-It is the front end for de project [payment-processor-grpc](https://github.com/lipejose/payment-processor-grpc)
-To make everything work you will also need [grpc-docker-web-proxy](https://github.com/lipejose/grpc-docker-web-proxy)
+- This project is made with [Remix](https://remix.run)
+- It is the front end for de project [payment-processor-grpc](https://github.com/lipejose/payment-processor-grpc)
+- To make everything work you will also need [grpc-docker-web-proxy](https://github.com/lipejose/grpc-docker-web-proxy)
 
 ## Video
 
