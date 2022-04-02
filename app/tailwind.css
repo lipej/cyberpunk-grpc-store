@@ -900,6 +900,20 @@ html {
   flex-direction: column;
 }
 
+.label {
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .input {
   flex-shrink: 1;
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
@@ -1400,6 +1414,11 @@ body[dir="rtl"] .checkbox:checked,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.label a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
+}
+
 .input-bordered {
   --tw-border-opacity: 0.2;
 }
@@ -1777,6 +1796,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-\[300px\] {

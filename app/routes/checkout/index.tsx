@@ -139,7 +139,7 @@ export default function CheckoutPage() {
           </CollapseContent>
           <CollapseContent title='Dados do cartão'>
             <Card {...watch()} />
-            <div className='flex flex-col pt-4 space-y-2 text-white'>
+            <div className='flex flex-col pt-4 space-y-2'>
               <input
                 placeholder='Número Cartão'
                 maxLength={16}
