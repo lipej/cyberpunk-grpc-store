@@ -6,7 +6,7 @@
 
 ## Video
 
-https://user-images.githubusercontent.com/80367187/161402558-bcec7c53-e457-4ffa-b5be-cb1525398104.mp4
+https://user-images.githubusercontent.com/80367187/161402764-93453417-9dc0-4036-a1f5-d31a8f5b42c5.mp4
 
 ## Screenshots
 
@@ -21,13 +21,6 @@ https://user-images.githubusercontent.com/80367187/161402558-bcec7c53-e457-4ffa-
 
 #### Waiting
 <img width="1384" alt="capture" src="https://user-images.githubusercontent.com/80367187/161402080-be07fb6c-48d2-422b-a619-f317018ebbfb.png">
-
-#### Success
-<img width="1384" alt="success" src="https://user-images.githubusercontent.com/80367187/161402085-2e35a4d5-a5ec-4bdc-b059-163df5d44c34.png">
-
-#### Error
-<img width="1384" alt="error" src="https://user-images.githubusercontent.com/80367187/161402112-e87fcabd-93f8-4d6a-b160-fc23435c7383.png">
-
 
 
 ## Development
