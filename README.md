@@ -4,6 +4,10 @@ This project is made with [Remix](https://remix.run)
 It is the front end for de project [payment-processor-grpc](https://github.com/lipejose/payment-processor-grpc)
 To make everything work you will also need [grpc-docker-web-proxy](https://github.com/lipejose/grpc-docker-web-proxy)
 
+## Video
+
+https://user-images.githubusercontent.com/80367187/161402558-bcec7c53-e457-4ffa-b5be-cb1525398104.mp4
+
 ## Screenshots
 
 #### Home page
