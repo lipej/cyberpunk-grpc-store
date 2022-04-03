@@ -1,4 +1,4 @@
-export default function (num: string) {
+export const cardBrand = (num: string) => {
   //const number = num.split(" ").join("");
   const number = num
   const regex: Record<string, RegExp> = {

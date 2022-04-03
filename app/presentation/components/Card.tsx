@@ -1,4 +1,4 @@
-import cardBrand from "~/utils/card-brand";
+import { cardBrand } from "~/utils/card-brand";
 import { formatValidate } from "~/utils/format-date";
 import CardChip from "./icons/CardChip";
 
