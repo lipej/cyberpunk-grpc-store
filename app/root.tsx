@@ -11,6 +11,7 @@ import type { MetaFunction, LinksFunction } from "remix";
 import tailwindStyles from "./tailwind.css";
 import Error from "./presentation/components/Error";
 import ToastError from "./presentation/components/ToastError";
+global.XMLHttpRequest = require("xhr2");
 
 export const meta: MetaFunction = () => {
   return { title: "gRPC demo store" };
