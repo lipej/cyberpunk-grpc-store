@@ -1,3 +1,4 @@
+import { GRPC_ENTRY } from "~/config/env";
 import { PaymentServiceClient } from "~/infra/proto/PaymentServiceClientPb";
 import { Card, Customer , Order, PaymentRequest} from "~/infra/proto/payment_pb";
 
@@ -15,11 +16,10 @@ export class PaymentService {
     this.payment.setCard(this.createCard(params.card))
     this.payment.setOrder(this.createOrder({...params.customer, ...params.order}))
     this.payment.setProvider(params.provider)
-    console.log({params})
   }
 
   async execute() {
-    const client = new PaymentServiceClient('http://localhost:8080')
+    const client = new PaymentServiceClient(GRPC_ENTRY)
     return await client.process(this.payment, null)
   }
 
