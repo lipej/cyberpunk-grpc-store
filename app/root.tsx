@@ -5,9 +5,12 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useCatch,
 } from "remix";
 import type { MetaFunction, LinksFunction } from "remix";
 import tailwindStyles from "./tailwind.css";
+import Error from "./presentation/components/Error";
+import ToastError from "./presentation/components/ToastError";
 
 export const meta: MetaFunction = () => {
   return { title: "gRPC demo store" };
@@ -16,6 +19,45 @@ export const meta: MetaFunction = () => {
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStyles }];
 };
+
+export function ErrorBoundary({ error }: { error: Error }) {
+  return (
+    <html lang='en'>
+      <head>
+        <meta charSet='utf-8' />
+        <title>Ops, aconteceu um error!</title>
+        <Links />
+      </head>
+      <body>
+        <ToastError message={error.message} />
+        <div className='flex flex-col h-screen items-center justify-center bg-error-custom '>
+          <Error />
+        </div>
+        <LiveReload />
+      </body>
+    </html>
+  );
+}
+
+export function CatchBoundary() {
+  const caught = useCatch();
+  return (
+    <html lang='en'>
+      <head>
+        <meta charSet='utf-8' />
+        <title>{`Ops! ${caught.status}`}</title>
+        <Links />
+      </head>
+      <body>
+        <ToastError message={caught.statusText} />
+        <div className='flex flex-col h-screen items-center justify-center bg-error-custom '>
+          <Error />
+        </div>
+        <LiveReload />
+      </body>
+    </html>
+  );
+}
 
 export default function App() {
   return (
