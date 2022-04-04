@@ -1,7 +1,8 @@
 # Welcome to Cyberpunk grpc store!!
 
-- This project is made with [Remix](https://remix.run) and use gRPC web.
-- It is the front end for de project [payment-processor-grpc](https://github.com/lipejose/payment-processor-grpc)
+This project is a virtual store with fictitious products from the cyberpunk game, it was created using remix & tailwind css with daisyui, this project also use gRPC web to communicate with the server.
+
+- Server [payment-processor-grpc](https://github.com/lipejose/payment-processor-grpc).
 - To make everything work you will also need [grpc-docker-web-proxy](https://github.com/lipejose/grpc-docker-web-proxy)
 
 ## Video
